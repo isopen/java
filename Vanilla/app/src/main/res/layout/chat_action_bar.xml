@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:weightSum="100" >
+
+    <ImageView
+        android:id="@+id/action_bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:src="@drawable/ic_ab_back"
+        android:clickable="true"
+        android:background="@drawable/bar_selector"
+        android:padding="13dp" />
+
+    <ImageView
+        android:id="@+id/avatar_title"
+        android:layout_width="50dp"
+        android:padding="3dp"
+        android:layout_weight="5"
+        android:layout_height="wrap_content"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:text="@string/AppName"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_weight="85" />
+
+    <ImageView
+        android:id="@+id/other_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="13dp"
+        android:clickable="true"
+        android:background="@drawable/bar_selector"
+        android:src="@drawable/ic_ab_other"
+        android:layout_weight="5" />
+
+</LinearLayout>

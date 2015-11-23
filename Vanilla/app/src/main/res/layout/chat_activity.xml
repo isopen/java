@@ -1,0 +1,53 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="wrap_content"
+    android:fillViewport="true"
+    android:background="#f5f5f5">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/chat_box_message"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:layout_gravity="bottom">
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/ic_msg_panel_smiles"
+                android:layout_gravity="bottom"
+                android:id="@+id/smile_chat"/>
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@android:color/white"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="@string/Message">
+                <requestFocus />
+            </EditText>
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/ic_send"
+                android:layout_gravity="bottom"
+                android:id="@+id/send_chat"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</ScrollView>

@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/name_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:gravity="center"
+        android:layout_marginTop="80dp">
+        <EditText
+            android:id="@+id/user_firstname"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_weight="50"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:maxLength="10"
+            android:background="@android:color/white"
+            android:inputType="text"
+            android:ems="50"
+            android:hint="@string/SortFirstName">
+            <requestFocus />
+         </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="120dp"
+        android:weightSum="100"
+        android:gravity="center_horizontal">
+        <View
+            android:layout_width="150dp"
+            android:background="@drawable/regbtn_states"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="50"
+            android:layout_height="3dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:gravity="center"
+        android:layout_marginTop="145dp">
+        <EditText
+            android:id="@+id/user_lastname"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_weight="50"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:maxLength="10"
+            android:background="@android:color/white"
+            android:inputType="text"
+            android:ems="50"
+            android:hint="@string/SortLastName"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="180dp"
+        android:weightSum="100"
+        android:gravity="center_horizontal">
+        <View
+            android:layout_width="150dp"
+            android:background="@drawable/regbtn_states"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="50"
+            android:layout_height="3dp"
+            />
+    </LinearLayout>
+
+</FrameLayout>
