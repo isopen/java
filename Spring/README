@@ -1,0 +1,14 @@
+http//<<host>>/statusConfirm?id=1 - изменить статус.(id:номер документа)
+http://<<host>>/delDoc?id=5 - удалить документ.(id:номер документа)
+http://<<host>>/getdocs - получить список всех документов. 
+http://<<host>>/getdoc?id=1 - получить документ.(id:номер документа)
+client/index.php - создать документ.(был запущен из под apache)
+
+Инструменты:
+Java
+Spring
+Gradle
+Slyway
+h2
+Spring Boot
+jdbcTemplate
